@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html learning</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+   <nav>
+    <a align="left"  href="#"><img
+            src="https://www.cargoflash.com/static/images/cargoflash-logo.png" alt="cargoflash logo" width="165"
+            height="55"></a>
+    <a align="center">Training Project - 1</a>        
+   </nav>
+   <br>
+   <form id="form">
+    <h4 align = "center"  >Employee Form</h4> 
+    <label for="name">Name:</label>
+    <input type="text" id="name"name="name" required>
+
+    <label for="EmpId">Emp Id:</label>
+    <input type="number" id="EmpId" name="EmpId" required>
+
+    <label for="number">Phone no:</label>
+    <input type="tel" id="number" name="number" required>
+
+    <label for="dob">Date of birth:</label>
+    <input type="date" id="dob" name="dob" required>
+
+
+    <label for="department">Select Department:</label>
+    <select id="department" name="department" required>
+        <option value="">Select Department</option>
+        <option value="SDE">Software Developer</option>
+        <option value="ST">Software Tester</option>
+        <option value="DS">Data Science</option>
+        <option value="DevOps">DevOps</option>
+    </select>
+
+    <input type="submit" value="Submit">
+    
+
+   </form>
+
+    <h2 align="center"> Employee Details</h2>
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Emp Id</th>
+                <th>Phone no</th>
+                <th>Date of Birth</th>
+                <th>Department</th>
+            </tr>
+        </thead>
+        <tbody id="dataBody">
+            <!-- Data rows will be dynamically added here -->
+        </tbody>
+    </table>
+
+    
+<script src="script.js"></script>
+</body>
+</html>
